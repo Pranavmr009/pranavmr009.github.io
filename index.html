@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head>
+  <title>Pranav&#39;s Portfolio</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Pranav&#39;s Portfolio" />
+<meta name="author" content="Pranav MR" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.92.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+    
+  
+  <link href="/main.min.b64eb270f0d7e89c38f73fa02294675e5a2c58ee346202198e84515904b094ec.css" rel="stylesheet" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="https://pranavmr.xyz">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+  </div>
+  <div>
+  <a class="mr-4" href="/search"><i class="fas fa-search"></i></i></a>
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</div>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/profile.png"
+    alt="Pranav MR"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Pranav MR</h1>
+<h2 class="mb-0">Developer</h2>
+<h3 class="mb-4">Kerala, India</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="mailto:pranavmrofficial@gmail.com">
+      <i class="mt-1 fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.linkedin.com/in/pranavmr009/">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/pranavmr009/">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://x.com/pranavmr009">
+      <i class="mt-1 fab fa-twitter"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.youtube.com/@pranavtechy">
+      <i class="mt-1 fab fa-youtube"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://example.com/path/to/your/resume.pdf">
+      <i class="mt-1 fas fa-file-pdf"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <p class="markdownify"></p>
+  <p >
+    <i>
+      <a href="">
+        
+      </a>
+    </i>
+    
+    <a href="">
+      
+    </a>
+  </p>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  Experienced freelance cybersecurity educator and software developer with a proven track record of delivering tailored training and secure software solutions. Skilled in simplifying complex concepts for learners and integrating robust security practices into development. Dedicated to staying updated with industry trends to provide cutting-edge services.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-briefcase"></i>
+          Experiences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">Freelance Developer and Cybersecurity Instructor</h4>
+<p class="mb-0">
+  2021 - <em>Present</em> &middot; 
+  <a href="https://www.fiverr.com/pranavtechy">Freelancer in Fiverr</a>
+  
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Develop Custom Software Solutions: Designed and implemented secure, scalable applications tailored to client specifications.</li>
+<li>Collaborate with Clients: Worked closely with clients to gather requirements, provide progress updates, and ensure project alignment with their goals.</li>
+<li>Develop and Deliver Training Content: Created comprehensive course materials, including presentations, labs, and real-world simulations, tailored to client needs.</li>
+<li>Conduct Workshops and Webinars: Facilitated live sessions to educate individuals and teams on cybersecurity best practices and emerging threats.</li>
+</ul>
+
+</div>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">Bachelor&#39;s in Computer Science and Data Analytics</h4>
+<p >2021 - 2024 &middot; Bharathiar University</p>
+
+
+
+<h4 style="text-decoration: underline;">eSecurity&#39;s Junior Penetration Tester (eJPT)</h4>
+<p class="mb-0" >2023 &middot; INE Security</p>
+
+
+<p>
+  Certificate Link:
+  <a href="https://drive.google.com/file/d/1Lih5rFIgISQOUdRftw3tjGFNX4BZAppR/view?usp=sharing"><i>eJPT.pdf</i></a>
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class=""></i>
+          </p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-project-diagram"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4>
+  <a href="https://github.com/Pranavmr009/Netflix-Clone">Netflix Clone in MERN stack</a>
+</h4>
+<p class="markdownify indent-8">A Netflix clone built with MERN stack. It has all the features of the latest Netflix website.</p>
+
+<h4>
+  <a href="https://github.com/Pranavmr009/Malware-Analyzer">Malware Analyzer</a>
+</h4>
+<p class="markdownify indent-8">A malware analysis tool made in Python that can perform both static and dynamic analysis</p>
+
+<h4>
+  <a href="https://github.com/Pranavmr009/python_password_manager">Python Password Manager</a>
+</h4>
+<p class="markdownify indent-8">A password manager made with Python that encrypts a password with a key and stores it securely in a database.</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-cogs"></i>
+          Skills</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        id="skill-panel"
+        
+      >
+        <div class=""><script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>Programming (C, C&#43;&#43;, Python)</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="100% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Cybersecurity</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="100% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Linux</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="100% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Cloud (AWS, GCP, AZURE)</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="100% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>MERN (MongoDB, Express, React, and Node)</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="100% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Cooking</li>
+  
+  <li class="list-unstyled mb-2">Reading</li>
+  
+  <li class="list-unstyled mb-2">Anime</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-envelope"></i>
+          Contact</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  <h3 id="get-in-touch">Get in Touch</h3>
+<p>I&rsquo;m always open to discussing new projects, opportunities, or collaborations.</p>
+<p><strong>Email</strong>: <a href="mailto:pranavmrofficial@gmail.com">pranavmrofficial@gmail.com</a></p>
+<p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/pranavmr009/">Pranav MR</a></p>
+<p><strong>GitHub</strong>: <a href="https://github.com/pranavmr009/">pranavmr009</a></p>
+<p><strong>Fiverr</strong>: <a href="https://www.fiverr.com/pranavtechy">Pranav MR</a></p>
+<p><strong>Resume</strong>: <a href="https://drive.google.com/file/d/1feQq2MWRmVPr41zrMPXFYb9umhlJzn0T/view?usp=sharing">My Resume</a></p>
+<p>Feel free to reach out through any of these channels. I&rsquo;ll get back to you as soon as possible!</p>
+
+</p></div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
